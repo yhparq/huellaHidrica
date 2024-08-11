@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página de Inicio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="main-secion-container">
+            <!-- Primer div responsivo -->
+            <div class="div-1">
+                <!-- <div class="p-3 border bg-light">Contenido del primer div</div> -->
+            </div>
+            <!-- Segundo div responsivo -->
+            <div class="div-2">
+                <div class="text-box">
+                    <h1 class="title-box-1">Huella </h1>
+                    <h1 class="title-box-1">Hidrica en la</h1>
+                    <h1 class="title-box-1">Amazonia Peruana</h1>
+                    <div class="btn">
+                        <a href="{% url 'welcome' %}" class="">Participar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

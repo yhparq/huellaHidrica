@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Resultados del Quiz</h1>
+        <div class="alert alert-success text-center">
+            <h4>Hola, {{ name }}</h4>
+            <p>Tu puntuación es {{ score }} de {{ total }}</p>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'index' %}" class="btn btn-primary">Volver al inicio</a>
+        </div>
+    </div>
+</body>
